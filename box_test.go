@@ -46,3 +46,13 @@ func TestBox(t *testing.T) {
 		require.Error(t, err)
 	})
 }
+
+func TestBadBox(t *testing.T) {
+	pub, prv, err := box.GenerateKey(rand.Reader)
+	require.NoError(t, err)
+
+	b := Box([]byte("this isn't a valid box"))
+
+	_, err = b.Decrypt(pub, prv)
+	require.Error(t, err)
+}
