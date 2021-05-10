@@ -7,7 +7,7 @@
 
 A NaCL based secret box that can be opened with either of two keys.
 
-Example:
+## Example
 
 ```golang
 package main
