@@ -51,3 +51,9 @@ func main() {
 	// Eve got:
 }
 ```
+
+See the blog post on [fmt.println.blog](https://fmt.println.blog/posts/double-keyed-box/) for more information.
+
+## Contributions
+
+Contributions are welcome. Open a PR with your changes, updating/adding unit tests as appropriate.
